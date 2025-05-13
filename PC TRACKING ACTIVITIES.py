@@ -125,7 +125,9 @@ def to_excel(df):
         df.to_excel(writer, index=False, sheet_name='PC_Tracking')
     processed_data = output.getvalue()
     return processed_data
+
 st.subheader("⬇️ Download Updated PC Matrix")
+
 st.markdown("""
     <style>
     .stDownloadButton>button {
@@ -140,11 +142,15 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# ✅ Properly closed download_button
 st.download_button(
     label="Download Excel File",
     data=to_excel(edited_df),
     file_name='Updated_PC_Tracking_Matrix.xlsx',
     mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+)
+
+# ✅ Upload block placed cleanly after download
 st.markdown("### 🔄 Upload Updated Matrix (for cross-device use)")
 uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx"])
 
@@ -154,8 +160,6 @@ if uploaded_file:
     # Save uploaded file to overwrite local copy
     with open("PC_Tracking_Matrix_ICD_2024_2025.xlsx", "wb") as f:
         f.write(uploaded_file.read())
-        
-)
 # ICD External Website Link
 st.markdown("""
 <hr>
