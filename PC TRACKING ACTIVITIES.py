@@ -50,4 +50,4 @@ st.download_button(
 )
 
 st.markdown("---")
-st.caption("Developed by Jared for ICD | CUK • 2025")
+st.caption("Developed by Jared Murundu for ACDRI (ICD/DRI) @copyrights All rights Preserved | CUK • 2025")
