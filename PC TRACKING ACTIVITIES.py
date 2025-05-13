@@ -16,6 +16,41 @@ st.markdown("""
         <p style='font-size: 16px; margin: 10px 0;'><strong>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION(ACDRI)</strong></p>
     </div>
 """, unsafe_allow_html=True)
+st.markdown("""
+    <div style='text-align: center; font-family: Garamond, serif; margin-top: 20px;'>
+
+        <h3 style='margin-bottom: 5px;'>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION (ACDRI)</h3>
+        <h4 style='margin-top: 0px;'>INSTITUTE OF CO-OPERATIVE DEVELOPMENT (ICD)</h4>
+
+        <div style='display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px;'>
+
+            <!-- Director -->
+            <div style='text-align: center; width: 200px;'>
+                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/director.png' width='120'/>
+                <p style='font-size: 16px; margin-top: 5px;'><strong>Prof. Wycliffe Oboka</strong><br/>Director, ICD</p>
+            </div>
+
+            <!-- Short Courses Coordinator -->
+            <div style='text-align: center; width: 200px;'>
+                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/victor.png' width='120'/>
+                <p style='font-size: 16px; margin-top: 5px;'><strong>Victor Wambua</strong><br/>Short Courses Co-ordinator</p>
+            </div>
+
+            <!-- Admin Assistant -->
+            <div style='text-align: center; width: 200px;'>
+                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/jared.png' width='120'/>
+                <p style='font-size: 16px; margin-top: 5px;'><strong>Jared Murundu</strong><br/>Administrative Assistant</p>
+            </div>
+
+            <!-- Office Assistant -->
+            <div style='text-align: center; width: 200px;'>
+                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/mercy.png' width='120'/>
+                <p style='font-size: 16px; margin-top: 5px;'><strong>Mercy Sipayo</strong><br/>Office Assistant (Records)</p>
+            </div>
+
+        </div>
+    </div>
+""", unsafe_allow_html=True)
 
 st.markdown("""
     <h1 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif;'>
@@ -33,16 +68,16 @@ def load_data():
         return pd.read_excel(file_path)
     except FileNotFoundError:
         return pd.DataFrame({
-            "PC Target": [],
-            "Responsible Officer": [],
-            "Status of Achievement": [],
+            "The PC Target": [],
+            "Responsible ICD Officer": [],
+            "Status of The PC Target": [],
             "Evidence": []
         })
 
 # Load the data
 df = load_data()
 
-st.subheader("📋 Please Edit or Update PC Matrix Below")
+st.subheader("Please Update PC Matrix Below")
 
 edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
 
