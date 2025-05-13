@@ -9,8 +9,10 @@ st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
 st.markdown("""
     <div style='text-align: center; margin-bottom: 10px;'>
         <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Cuk.png' width='160'/>
-        <p style='font-family: Garamond, serif; font-size: 16px;'>📧 THE CO-OPERATIVE UNIVERSITY OF KENYA </p>
-        <p style='font-family: Garamond, serif; font-size: 16px;'>📧 enquiries@cuk.ac.ke| +254 724311606</p>
+        <p style='font-family: Garamond, serif; font-size: 16px;'> THE CO-OPERATIVE UNIVERSITY OF KENYA </p>
+        <p style='font-family: Garamond, serif; font-size: 16px;'>P.O BOX 24814-00502 Karen, Kenya</p>
+        <p style='font-family: Garamond, serif; font-size: 16px;'>Telephone: (020)-2430127/2679456/8891401 Fax (020)-8891410 Website: www.cuk.ac.ke</p>
+        <p style='font-family: Garamond, serif; font-size: 16px;'>DIVISION OF ACADEMICS, CO-OPERTAIVE DEVELOPMENT, RESEARCH AND INNOVATION</p>
     </div>
 """, unsafe_allow_html=True)
 
