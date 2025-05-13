@@ -6,51 +6,41 @@ from io import BytesIO
 
 st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
 
+# University Header
 st.markdown("""
     <div style='text-align: center; margin-bottom: 20px; font-family: Garamond, serif;'>
         <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Cuk.png' width='160' />
-        <p style='font-size: 18px; margin: 4px 0;'><strong>THE CO-OPERATIVE UNIVERSITY OF KENYA</strong></p>
-        <p style='font-size: 16px; margin: 2px 0;'>P.O. Box 24814 – 00502, Karen, Kenya</p>
-        <p style='font-size: 16px; margin: 2px 0;'>Telephone: (020)-2430127 / 2679456 / 8891401 &nbsp;&nbsp; Fax: (020)-8891410</p>
-        <p style='font-size: 16px; margin: 2px 0;'>Website: <a href='https://www.cuk.ac.ke' target='_blank'>www.cuk.ac.ke</a> &nbsp;&nbsp; Email: enquiries@cuk.ac.ke</p>
-        <p style='font-size: 16px; margin: 10px 0;'><strong>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION(ACDRI)</strong></p>
+        <p style='font-size: 18px;'><strong>THE CO-OPERATIVE UNIVERSITY OF KENYA</strong></p>
+        <p>P.O. Box 24814 – 00502, Karen, Kenya</p>
+        <p>Telephone: (020)-2430127 / 2679456 / 8891401 &nbsp;&nbsp; Fax: (020)-8891410</p>
+        <p>Website: <a href='https://www.cuk.ac.ke' target='_blank'>www.cuk.ac.ke</a> &nbsp;&nbsp; Email: enquiries@cuk.ac.ke</p>
+        <p style='font-size: 16px; margin-top: 10px;'><strong>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION (ACDRI)</strong></p>
+        <p><strong>INSTITUTE OF CO-OPERATIVE DEVELOPMENT (ICD)</strong></p>
     </div>
 """, unsafe_allow_html=True)
-st.markdown("""
-    <div style='text-align: center; font-family: Garamond, serif; margin-top: 20px;'>
 
-        <h3 style='margin-bottom: 5px;'>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION (ACDRI)</h3>
-        <h4 style='margin-top: 0px;'>INSTITUTE OF CO-OPERATIVE DEVELOPMENT (ICD)</h4>
+# Section Header
+st.markdown("### Team Members")
 
-        <div style='display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px;'>
+# Create 4 side-by-side columns for staff
+col1, col2, col3, col4 = st.columns(4)
 
-            <!-- Director -->
-            <div style='text-align: center; width: 200px;'>
-                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/director.png' width='120'/>
-                <p style='font-size: 16px; margin-top: 5px;'><strong>Prof. Wycliffe Oboka</strong><br/>Director, ICD</p>
-            </div>
+with col1:
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/director.png", width=130)
+    st.markdown("**Prof. Wycliffe Oboka**  \nDirector, ICD", unsafe_allow_html=True)
 
-            <!-- Short Courses Coordinator -->
-            <div style='text-align: center; width: 200px;'>
-                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/victor.png' width='120'/>
-                <p style='font-size: 16px; margin-top: 5px;'><strong>Victor Wambua</strong><br/>Short Courses Co-ordinator</p>
-            </div>
+with col2:
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/victor.png", width=130)
+    st.markdown("**Victor Wambua**  \nShort Courses Co-ordinator", unsafe_allow_html=True)
 
-            <!-- Admin Assistant -->
-            <div style='text-align: center; width: 200px;'>
-                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/jared.png' width='120'/>
-                <p style='font-size: 16px; margin-top: 5px;'><strong>Jared Murundu</strong><br/>Administrative Assistant</p>
-            </div>
+with col3:
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/jared.png", width=130)
+    st.markdown("**Jared Murundu**  \nAdministrative Assistant", unsafe_allow_html=True)
 
-            <!-- Office Assistant -->
-            <div style='text-align: center; width: 200px;'>
-                <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/mercy.png' width='120'/>
-                <p style='font-size: 16px; margin-top: 5px;'><strong>Mercy Sipayo</strong><br/>Office Assistant (Records)</p>
-            </div>
+with col4:
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/mercy.png", width=130)
+    st.markdown("**Mercy Sipayo**  \nOffice Assistant (Records)", unsafe_allow_html=True)
 
-        </div>
-    </div>
-""", unsafe_allow_html=True)
 
 st.markdown("""
     <h1 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif;'>
