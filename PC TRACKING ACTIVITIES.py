@@ -150,7 +150,7 @@ st.download_button(
 st.markdown("""
 <hr>
 <div style='text-align: center; font-family: Garamond, serif; font-size: 16px; margin-top: 30px;'>
-    📎 <a href='https://cuk.ac.ke/icd/' target='_blank'><strong>Visit the ICD Website</strong></a>
+    📎 <a href='https://cuk.ac.ke/icd/' target='_blank'><strong> VISIT OUR ICD WEBSITE</strong></a>
 </div>
 """, unsafe_allow_html=True)
 
