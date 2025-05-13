@@ -113,15 +113,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-st.markdown("### 🔄 Upload Updated Matrix (for cross-device use)")
-uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx"])
-
-if uploaded_file:
-    df = pd.read_excel(uploaded_file)
-    st.success("✅ Uploaded and loaded new file successfully.")
-    # Save uploaded file to overwrite local copy
-    with open("PC_Tracking_Matrix_ICD_2024_2025.xlsx", "wb") as f:
-        f.write(uploaded_file.read())
 
 if st.button("Save"):
     edited_df.to_excel("PC_Tracking_Matrix_ICD_2024_2025.xlsx", index=False)
@@ -134,6 +125,15 @@ def to_excel(df):
         df.to_excel(writer, index=False, sheet_name='PC_Tracking')
     processed_data = output.getvalue()
     return processed_data
+st.markdown("### 🔄 Upload Updated Matrix (for cross-device use)")
+uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx"])
+
+if uploaded_file:
+    df = pd.read_excel(uploaded_file)
+    st.success("✅ Uploaded and loaded new file successfully.")
+    # Save uploaded file to overwrite local copy
+    with open("PC_Tracking_Matrix_ICD_2024_2025.xlsx", "wb") as f:
+        f.write(uploaded_file.read())
 
 st.markdown("""
     <style>
