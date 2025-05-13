@@ -146,6 +146,27 @@ st.download_button(
     file_name='Updated_PC_Tracking_Matrix.xlsx',
     mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 )
+# ICD External Website Link
+st.markdown("""
+<hr>
+<div style='text-align: center; font-family: Garamond, serif; font-size: 16px; margin-top: 30px;'>
+    📎 <a href='https://cuk.ac.ke/icd/' target='_blank'><strong>Visit the ICD Website</strong></a>
+</div>
+""", unsafe_allow_html=True)
+
+# ICD Brochure Display
+st.markdown("""
+<hr>
+<h4 style='text-align: center; font-family: Garamond, serif;'>📘 ICD Brochure</h4>
+""", unsafe_allow_html=True)
+
+# Embed the PDF Brochure from GitHub
+st.markdown("""
+    <iframe src="https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/ICD-Brochure.pdf"
+            width="100%" height="600px"
+            style="border: 2px solid #ccc; border-radius: 10px;">
+    </iframe>
+""", unsafe_allow_html=True)
 
 
 st.markdown("""
