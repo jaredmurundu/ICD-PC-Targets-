@@ -9,7 +9,7 @@ st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
 st.markdown("""
     <div style='text-align: center; margin-bottom: 10px;'>
         <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Cuk.png' width='160'/>
-        <p style='font-family: Garamond, serif; font-size: 16px;'>📧 enquiries@cuk.ac.ke</p>
+        <p style='font-family: Garamond, serif; font-size: 16px;'>📧 enquiries@cuk.ac.ke| +254 724311606</p>
     </div>
 """, unsafe_allow_html=True)
 
