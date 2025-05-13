@@ -22,7 +22,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 # Vice Chancellor Section
 st.markdown("""
     <div style='text-align: center; font-family: Garamond, serif; margin-bottom: 40px;'>
-        <h3 style='text-transform: uppercase; margin-bottom: 10px;'>Vice Chancellor – ACDRI</h3>
+        <h3 style='text-transform: uppercase; margin-bottom: 10px;'>Deputy Vice Chancellor – ACDRI</h3>
         <div style='display: inline-block; padding: 15px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s;'>
             <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof%20Isaac%20Nyamongo.jpeg' width='160' style='border-radius: 10px;'/>
             <p style='font-size: 17px; margin-top: 12px;'><strong>Prof. Isaac Nyamongo</strong><br>Deputy Vice Chancellor – ACDRI</p>
