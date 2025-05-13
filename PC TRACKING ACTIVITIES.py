@@ -2,7 +2,16 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
+
+
 st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
+# CUK logo and email (centered)
+st.markdown("""
+    <div style='text-align: center; margin-bottom: 10px;'>
+        <img src='https://cuk.ac.ke/wp-content/uploads/2020/10/cuk_logo.png' width='150'/>
+        <p style='font-family: Garamond, serif; font-size: 16px; margin-top: 5px;'>📧 enquiries@cuk.ac.ke</p>
+    </div>
+""", unsafe_allow_html=True)
 
 st.markdown("""
     <h1 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif;'>
