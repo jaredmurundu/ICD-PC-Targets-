@@ -71,7 +71,7 @@ with col3:
 with col4:
     render_card(
         "https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Mercy%20Sipayo.jpg",
-        "Mrs Mercy Sipayo",
+        "Ms Mercy Sipayo",
         "Office Assistant (Records), ICD"
     )
 
