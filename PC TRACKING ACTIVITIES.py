@@ -38,7 +38,11 @@ st.markdown("""
 
 
 # Section Header
-st.markdown("### ICD STAFF")
+st.markdown("""
+    <h3 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif; margin-bottom: 10px;'>
+        INSTITUTE OF COOPERATIVE DEVELOPMENT STAFF
+    </h3>
+""", unsafe_allow_html=True)
 
 # Create 4 side-by-side columns for staff
 col1, col2, col3, col4 = st.columns(4)
