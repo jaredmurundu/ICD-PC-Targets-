@@ -51,8 +51,9 @@ st.download_button(
 
 st.markdown("""
 <hr>
-<div style='text-align: center; font-size: 13px;'>
+<div style='text-align: center; font-family: Garamond, serif; font-size: 18px;'>
     <strong>Developed by Jared Murundu for ACDRI (ICD/DRI) © All Rights Reserved | CUK • 2025</strong>
 </div>
 """, unsafe_allow_html=True)
+
 
