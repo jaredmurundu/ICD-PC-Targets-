@@ -6,69 +6,64 @@ from io import BytesIO
 
 st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
 
-# University Header
-st.markdown("""
-    <div style='text-align: center; margin-bottom: 20px; font-family: Garamond, serif;'>
-        <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Cuk.png' width='160' />
-        <p style='font-size: 18px;'><strong>THE CO-OPERATIVE UNIVERSITY OF KENYA</strong></p>
-        <p>P.O. Box 24814 – 00502, Karen, Kenya</p>
-        <p>Telephone: (020)-2430127 / 2679456 / 8891401 &nbsp;&nbsp; Fax: (020)-8891410</p>
-        <p>Website: <a href='https://www.cuk.ac.ke' target='_blank'>www.cuk.ac.ke</a> &nbsp;&nbsp; Email: enquiries@cuk.ac.ke</p>
-        <p style='font-size: 16px; margin-top: 10px;'><strong>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION (ACDRI)</strong></p>
-        <p><strong>INSTITUTE OF CO-OPERATIVE DEVELOPMENT (ICD)</strong></p>
-    </div>
-""", unsafe_allow_html=True)
-
+# Section divider
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# Title block
+# Vice Chancellor Section
 st.markdown("""
-    <h3 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif; margin-bottom: 10px;'>
-        Vice Chancellor – ACDRI
-    </h3>
-""", unsafe_allow_html=True)
-
-# Centered profile with image and title
-st.markdown("""
-    <div style='text-align: center; font-family: Garamond, serif; margin-bottom: 30px;'>
-        <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof%20Isaac%20Nyamongo.jpeg' width='160'/>
-        <p style='font-size: 16px; margin-top: 10px;'><strong>Prof. Isaac Nyamongo</strong><br>Deputy Vice Chancellor – ACDRI</p>
+    <div style='text-align: center; font-family: Garamond, serif; margin-bottom: 40px;'>
+        <h3 style='text-transform: uppercase; margin-bottom: 10px;'>Vice Chancellor – ACDRI</h3>
+        <div style='display: inline-block; padding: 15px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s;'>
+            <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof%20Isaac%20Nyamongo.jpeg' width='160' style='border-radius: 10px;'/>
+            <p style='font-size: 17px; margin-top: 12px;'><strong>Prof. Isaac Nyamongo</strong><br>Deputy Vice Chancellor – ACDRI</p>
+        </div>
     </div>
 """, unsafe_allow_html=True)
 
+# Section Heading
+st.markdown("<h3 style='text-align: center; font-family: Garamond, serif;'>ICD STAFF </h3>", unsafe_allow_html=True)
 
-# Section Header
-st.markdown("""
-    <h3 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif; margin-bottom: 10px;'>
-        INSTITUTE OF COOPERATIVE DEVELOPMENT STAFF
-    </h3>
-""", unsafe_allow_html=True)
-
-# Create 4 side-by-side columns for staff
+# ICD Team Members
 col1, col2, col3, col4 = st.columns(4)
 
+def render_card(image_url, name, title):
+    st.markdown(f"""
+        <div style='text-align: center; font-family: Garamond, serif; 
+                    border-radius: 15px; padding: 15px; 
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+                    transition: transform 0.3s ease;'>
+            <img src='{image_url}' width='130' style='border-radius: 10px; margin-bottom: 10px;'/>
+            <p style='font-size: 16px;'><strong>{name}</strong><br>{title}</p>
+        </div>
+    """, unsafe_allow_html=True)
+
 with col1:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof. Wycliffe Oboka.webp", width=130)
-    st.markdown("**Prof. Wycliffe Oboka**  \nDirector, ICD", unsafe_allow_html=True)
+    render_card(
+        "https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof.%20Wycliffe%20Oboka.webp",
+        "Prof. Wycliffe Oboka",
+        "Director, ICD"
+    )
 
 with col2:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Victor Wambua.png", width=130)
-    st.markdown("**Mr. Victor Wambua**  \nShort Courses Co-ordinator, ICD", unsafe_allow_html=True)
+    render_card(
+        "https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Victor%20Wambua.png",
+        "Mr. Victor Wambua",
+        "Short Courses Co-ordinator, ICD"
+    )
 
 with col3:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Jared Murundu.jpg", width=130)
-    st.markdown("**Mr. Jared Murundu**  \nAdministrative Assistant", unsafe_allow_html=True)
+    render_card(
+        "https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Jared%20Murundu.jpg",
+        "Mr. Jared Murundu",
+        "Administrative Assistant, ICD"
+    )
 
 with col4:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Mercy Sipayo.jpg", width=130)
-    st.markdown("**Mrs Mercy Sipayo**  \nOffice Assistant (Records), ICD", unsafe_allow_html=True)
-
-
-st.markdown("""
-    <h1 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif;'>
-         ICD PERFORMANCE CONTRACT (PC) TRACKING DASHBOARD
-    </h1>
-""", unsafe_allow_html=True)
+    render_card(
+        "https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Mercy%20Sipayo.jpg",
+        "Mrs Mercy Sipayo",
+        "Office Assistant (Records), ICD"
+    )
 
 
 # Load or create DataFrame
