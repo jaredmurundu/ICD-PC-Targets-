@@ -154,19 +154,29 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Brochure download/view
+# ICD Brochure section
 st.markdown("""
 <hr>
 <h4 style='text-align: center; font-family: Garamond, serif;'>📘 ICD Brochure</h4>
 
 <div style='text-align: center;'>
     <a href='https://github.com/jaredmurundu/ICD-PC-Targets-/raw/main/ICD-Brochure.pdf' target='_blank'>
-        <button style='background-color: #4CAF50; color: white; font-size: 16px; padding: 10px 20px; border: none; border-radius: 8px;'>
-            📥 View / Download ICD Brochure (PDF)
+        <button style='
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-family: Garamond, serif;
+            cursor: pointer;
+        '>
+            📥 View or Download ICD Brochure (PDF)
         </button>
     </a>
 </div>
 """, unsafe_allow_html=True)
+
 
 st.markdown("""
 <hr>
