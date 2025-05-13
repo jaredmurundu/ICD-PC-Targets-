@@ -28,10 +28,21 @@ st.subheader("📋 Please Edit or Update PC Matrix Below")
 
 edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
 
-# Save Updates
-if st.button("💾 Save Updates"):
+st.markdown("""
+    <style>
+    div.stButton > button {
+        background-color: green !important;
+        color: white !important;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Save button
+if st.button("💾 Save"):
     edited_df.to_excel("PC_Tracking_Matrix_ICD_2024_2025.xlsx", index=False)
-    st.success("✅ Updates saved successfully!")
+    st.success("✅ Saved!")
 
 # Download Button
 st.subheader("⬇️ Download Updated PC Matrix")
@@ -42,7 +53,6 @@ def to_excel(df):
     processed_data = output.getvalue()
     return processed_data
 
-# Inject custom CSS styling
 st.markdown("""
     <style>
     .stDownloadButton>button {
@@ -57,7 +67,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Render the actual download button
 st.download_button(
     label="Download Excel File",
     data=to_excel(edited_df),
