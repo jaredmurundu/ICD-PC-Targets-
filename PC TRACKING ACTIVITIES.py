@@ -13,7 +13,7 @@ st.markdown("""
         <p style='font-size: 16px; margin: 2px 0;'>P.O. Box 24814 – 00502, Karen, Kenya</p>
         <p style='font-size: 16px; margin: 2px 0;'>Telephone: (020)-2430127 / 2679456 / 8891401 &nbsp;&nbsp; Fax: (020)-8891410</p>
         <p style='font-size: 16px; margin: 2px 0;'>Website: <a href='https://www.cuk.ac.ke' target='_blank'>www.cuk.ac.ke</a> &nbsp;&nbsp; Email: enquiries@cuk.ac.ke</p>
-        <p style='font-size: 16px; margin: 10px 0;'><strong>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION</strong></p>
+        <p style='font-size: 16px; margin: 10px 0;'><strong>DIVISION OF ACADEMICS, CO-OPERATIVE DEVELOPMENT, RESEARCH AND INNOVATION(ACDRI)</strong></p>
     </div>
 """, unsafe_allow_html=True)
 
