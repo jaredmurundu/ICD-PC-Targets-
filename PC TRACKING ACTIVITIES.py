@@ -96,10 +96,6 @@ def load_data():
 
     return df
 
-# Load data and make editable
-df = load_data()
-edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
-
 # Load the data
 df = load_data()
 
