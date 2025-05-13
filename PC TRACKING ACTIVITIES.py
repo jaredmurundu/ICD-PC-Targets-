@@ -53,15 +53,15 @@ with col1:
 
 with col2:
     st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Victor Wambua.png", width=130)
-    st.markdown("**Victor Wambua**  \nShort Courses Co-ordinator", unsafe_allow_html=True)
+    st.markdown("**Mr. Victor Wambua**  \nShort Courses Co-ordinator, ICD", unsafe_allow_html=True)
 
 with col3:
     st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Jared Murundu.jpg", width=130)
-    st.markdown("**Jared Murundu**  \nAdministrative Assistant", unsafe_allow_html=True)
+    st.markdown("**Mr. Jared Murundu**  \nAdministrative Assistant", unsafe_allow_html=True)
 
 with col4:
     st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Mercy Sipayo.jpg", width=130)
-    st.markdown("**Mercy Sipayo**  \nOffice Assistant (Records)", unsafe_allow_html=True)
+    st.markdown("**Mrs Mercy Sipayo**  \nOffice Assistant (Records), ICD", unsafe_allow_html=True)
 
 
 st.markdown("""
