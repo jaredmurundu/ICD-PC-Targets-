@@ -76,13 +76,16 @@ with col4:
     )
 
 
-# Load or create DataFrame
 @st.cache_data
-
 def load_data():
     file_path = "PC_Tracking_Matrix_ICD_2024_2025.xlsx"
     try:
-        return pd.read_excel(file_path)
+        return pd.read_excel(file_path, dtype={
+            "The PC Target": str,
+            "Responsible ICD Officer": str,
+            "Status of The PC Target": str,
+            "Evidence": str
+        })
     except FileNotFoundError:
         return pd.DataFrame({
             "The PC Target": [],
@@ -90,6 +93,7 @@ def load_data():
             "Status of The PC Target": [],
             "Evidence": []
         })
+
 
 # Load the data
 df = load_data()
