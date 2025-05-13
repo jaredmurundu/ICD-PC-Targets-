@@ -19,7 +19,7 @@ st.markdown("""
 
 st.markdown("""
     <h1 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif;'>
-        📊 ICD PERFORMANCE CONTRACT (PC) TRACKING DASHBOARD
+         ICD PERFORMANCE CONTRACT (PC) TRACKING DASHBOARD
     </h1>
 """, unsafe_allow_html=True)
 
