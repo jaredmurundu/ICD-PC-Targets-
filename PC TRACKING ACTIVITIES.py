@@ -21,17 +21,17 @@ st.markdown("""
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# Centered, uppercase title in Garamond
+# Title block
 st.markdown("""
     <h3 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif; margin-bottom: 10px;'>
         Vice Chancellor – ACDRI
     </h3>
 """, unsafe_allow_html=True)
 
-# Profile section for Prof. Isaac Nyamongo
+# Centered profile with image and title
 st.markdown("""
     <div style='text-align: center; font-family: Garamond, serif; margin-bottom: 30px;'>
-        <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof%20Isaac%20Nyamongo.jpg' width='160'/>
+        <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof%20Isaac%20Nyamongo.jpeg' width='160'/>
         <p style='font-size: 16px; margin-top: 10px;'><strong>Prof. Isaac Nyamongo</strong><br>Deputy Vice Chancellor – ACDRI</p>
     </div>
 """, unsafe_allow_html=True)
