@@ -118,7 +118,7 @@ if st.button("Save"):
     edited_df.to_excel("PC_Tracking_Matrix_ICD_2024_2025.xlsx", index=False)
     st.success("✅ The Changes are Saved, Thank you.!")
 
-st.subheader("⬇️ Download Updated PC Matrix")
+
 def to_excel(df):
     output = BytesIO()
     with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
@@ -134,7 +134,8 @@ if uploaded_file:
     # Save uploaded file to overwrite local copy
     with open("PC_Tracking_Matrix_ICD_2024_2025.xlsx", "wb") as f:
         f.write(uploaded_file.read())
-
+        
+st.subheader("⬇️ Download Updated PC Matrix")
 st.markdown("""
     <style>
     .stDownloadButton>button {
