@@ -118,7 +118,7 @@ if st.button("Save"):
     edited_df.to_excel("PC_Tracking_Matrix_ICD_2024_2025.xlsx", index=False)
     st.success("✅ The Changes are Saved, Thank you.!")
 
-st.subheader("⬇️ You just edited the PC Matrix above download Updated PC Matrix")
+st.subheader("⬇️ Download Updated PC Matrix")
 def to_excel(df):
     output = BytesIO()
     with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
