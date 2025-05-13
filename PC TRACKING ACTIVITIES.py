@@ -26,7 +26,7 @@ st.markdown("### Team Members")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof. Wycliffe Oboka.webx", width=130)
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof. Wycliffe Oboka.webp", width=130)
     st.markdown("**Prof. Wycliffe Oboka**  \nDirector, ICD", unsafe_allow_html=True)
 
 with col2:
