@@ -49,5 +49,10 @@ st.download_button(
     mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 )
 
-st.markdown("---")
-st.caption("Developed by Jared Murundu for ACDRI (ICD/DRI) @copyrights All rights Preserved | CUK • 2025")
+st.markdown("""
+<hr>
+<div style='text-align: center; font-size: 13px;'>
+    <strong>Developed by Jared Murundu for ACDRI (ICD/DRI) © All Rights Reserved | CUK • 2025</strong>
+</div>
+""", unsafe_allow_html=True)
+
