@@ -2,9 +2,14 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
-# Title
 st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
-st.title("📊 ICD Performance Contract (PC) Tracking Dashboard")
+
+st.markdown("""
+    <h1 style='text-align: center; text-transform: uppercase; font-family: Garamond, serif;'>
+        📊 ICD PERFORMANCE CONTRACT (PC) TRACKING DASHBOARD
+    </h1>
+""", unsafe_allow_html=True)
+
 
 # Load or create DataFrame
 @st.cache_data
