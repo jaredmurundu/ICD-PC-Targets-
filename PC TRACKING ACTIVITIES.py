@@ -16,8 +16,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
-
 # Section divider
 st.markdown("<hr>", unsafe_allow_html=True)
 
