@@ -42,11 +42,29 @@ def to_excel(df):
     processed_data = output.getvalue()
     return processed_data
 
+# Inject custom CSS styling
+st.markdown("""
+    <style>
+    .stDownloadButton>button {
+        background-color: yellow !important;
+        color: blue !important;
+        border: 2px solid green !important;
+        font-weight: bold;
+        font-family: Garamond, serif;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Render the actual download button
 st.download_button(
     label="Download Excel File",
     data=to_excel(edited_df),
     file_name='Updated_PC_Tracking_Matrix.xlsx',
     mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+)
+
 )
 
 st.markdown("""
