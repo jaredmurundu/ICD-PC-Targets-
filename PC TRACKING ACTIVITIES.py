@@ -76,23 +76,29 @@ with col4:
     )
 
 
+# Load and prepare data
 @st.cache_data
 def load_data():
     file_path = "PC_Tracking_Matrix_ICD_2024_2025.xlsx"
     try:
-        return pd.read_excel(file_path, dtype={
-            "The PC Target": str,
-            "Responsible ICD Officer": str,
-            "Status of The PC Target": str,
-            "Evidence": str
-        })
+        df = pd.read_excel(file_path)
     except FileNotFoundError:
-        return pd.DataFrame({
+        df = pd.DataFrame({
             "The PC Target": [],
             "Responsible ICD Officer": [],
             "Status of The PC Target": [],
             "Evidence": []
         })
+
+    # Ensure all columns are treated as text
+    for col in df.columns:
+        df[col] = df[col].astype(str).replace("nan", "")
+
+    return df
+
+# Load and display editable table
+df = load_data()
+edited_df = st.data_editor(df, num_rows="dynamic", use_container_width=True)
 
 
 # Load the data
