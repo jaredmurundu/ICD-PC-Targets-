@@ -154,20 +154,19 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ICD Brochure Display
+# Brochure download/view
 st.markdown("""
 <hr>
 <h4 style='text-align: center; font-family: Garamond, serif;'>📘 ICD Brochure</h4>
-""", unsafe_allow_html=True)
 
-# Embed the PDF Brochure from GitHub
-st.markdown("""
-    <iframe src="https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/ICD-Brochure.pdf"
-            width="100%" height="600px"
-            style="border: 2px solid #ccc; border-radius: 10px;">
-    </iframe>
+<div style='text-align: center;'>
+    <a href='https://github.com/jaredmurundu/ICD-PC-Targets-/raw/main/ICD-Brochure.pdf' target='_blank'>
+        <button style='background-color: #4CAF50; color: white; font-size: 16px; padding: 10px 20px; border: none; border-radius: 8px;'>
+            📥 View / Download ICD Brochure (PDF)
+        </button>
+    </a>
+</div>
 """, unsafe_allow_html=True)
-
 
 st.markdown("""
 <hr>
