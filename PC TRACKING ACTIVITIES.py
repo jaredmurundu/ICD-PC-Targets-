@@ -157,7 +157,7 @@ st.markdown("""
 # ICD Brochure section
 st.markdown("""
 <hr>
-<h4 style='text-align: center; font-family: Garamond, serif;'>📘 ICD Brochure</h4>
+<h4 style='text-align: center; font-family: Garamond, serif;'>📘 ICD SHORT COURSE BRONCHURE</h4>
 
 <div style='text-align: center;'>
     <a href='https://github.com/jaredmurundu/ICD-PC-Targets-/raw/main/ICD-Brochure.pdf' target='_blank'>
@@ -171,7 +171,7 @@ st.markdown("""
             font-family: Garamond, serif;
             cursor: pointer;
         '>
-            📥 View or Download ICD Brochure (PDF)
+            📥 View or Download ICD SHORT COURSE BRONCHURE (PDF)
         </button>
     </a>
 </div>
