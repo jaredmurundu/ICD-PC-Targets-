@@ -19,8 +19,19 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("### Vice Chancellor – ACDRI", unsafe_allow_html=True)
+
+
+st.markdown("""
+    <div style='text-align: center; font-family: Garamond, serif; margin-bottom: 30px;'>
+        <img src='https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof.%20Isaac%20Nyamongo.jpg' width='160'/>
+        <p style='font-size: 16px; margin-top: 10px;'><strong>Prof. Isaac Nyamongo</strong><br>Deputy Vice Chancellor – ACDRI</p>
+    </div>
+""", unsafe_allow_html=True)
+
 # Section Header
-st.markdown("### Team Members")
+st.markdown("### ICD STAFF")
 
 # Create 4 side-by-side columns for staff
 col1, col2, col3, col4 = st.columns(4)
