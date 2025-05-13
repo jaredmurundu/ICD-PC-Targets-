@@ -5,10 +5,10 @@ from io import BytesIO
 
 
 st.set_page_config(page_title="ICD PC Tracking Dashboard", layout="wide")
-# CUK logo and email (centered)
+# Centered CUK logo and email
 st.markdown("""
     <div style='text-align: center; margin-bottom: 10px;'>
-        <img src='https://cuk.ac.ke/wp-content/uploads/2020/10/cuk_logo.png' width='150'/>
+        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Co-operative_University_of_Kenya_logo.png/600px-Co-operative_University_of_Kenya_logo.png' width='160'/>
         <p style='font-family: Garamond, serif; font-size: 16px; margin-top: 5px;'>📧 enquiries@cuk.ac.ke</p>
     </div>
 """, unsafe_allow_html=True)
