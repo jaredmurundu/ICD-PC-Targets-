@@ -26,19 +26,19 @@ st.markdown("### Team Members")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/director.png", width=130)
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Prof. Wycliffe Oboka.webx", width=130)
     st.markdown("**Prof. Wycliffe Oboka**  \nDirector, ICD", unsafe_allow_html=True)
 
 with col2:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/victor.png", width=130)
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Victor Wambua.png", width=130)
     st.markdown("**Victor Wambua**  \nShort Courses Co-ordinator", unsafe_allow_html=True)
 
 with col3:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/jared.png", width=130)
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Jared Murundu.jpg", width=130)
     st.markdown("**Jared Murundu**  \nAdministrative Assistant", unsafe_allow_html=True)
 
 with col4:
-    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/mercy.png", width=130)
+    st.image("https://raw.githubusercontent.com/jaredmurundu/ICD-PC-Targets-/main/Mercy Sipayo.jpg", width=130)
     st.markdown("**Mercy Sipayo**  \nOffice Assistant (Records)", unsafe_allow_html=True)
 
 
